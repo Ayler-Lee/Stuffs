@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='ios' display-mode='rendered'>
     <pages>
-        <page name='Untitled Page'/>
+        <page name='字符串和字符（Strings and Characters）'/>
         <page name='字符串字面量（String Literals）'/>
         <page name='初始化空字符串 (Initializing an Empty String)'/>
         <page name='字符串可变性 (String Mutability)'/>

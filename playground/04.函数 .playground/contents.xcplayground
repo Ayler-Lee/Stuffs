@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios'>
+    <pages>
+        <page name='函数（Functions）'/>
+        <page name='函数的定义与调用（Defining and Calling Functions）'/>
+        <page name='函数参数与返回值（Function Parameters and Return Values） '/>
+        <page name='函数类型（Function Types）'/>
+    </pages>
+</playground>
