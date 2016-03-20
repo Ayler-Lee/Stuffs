@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C9380E71C9D8F3D00F63BFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9380E61C9D8F3D00F63BFD /* AppDelegate.swift */; };
+		3C9380E91C9D8F3D00F63BFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9380E81C9D8F3D00F63BFD /* ViewController.swift */; };
+		3C9380EC1C9D8F3D00F63BFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C9380EA1C9D8F3D00F63BFD /* Main.storyboard */; };
+		3C9380EE1C9D8F3D00F63BFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C9380ED1C9D8F3D00F63BFD /* Assets.xcassets */; };
+		3C9380F11C9D8F3D00F63BFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C9380EF1C9D8F3D00F63BFD /* LaunchScreen.storyboard */; };
+		3C9380FC1C9D8F3D00F63BFD /* CassinaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9380FB1C9D8F3D00F63BFD /* CassinaTests.swift */; };
+		3C9381071C9D8F3D00F63BFD /* CassinaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9381061C9D8F3D00F63BFD /* CassinaUITests.swift */; };
+		3C9381161C9D8F8F00F63BFD /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9381151C9D8F8F00F63BFD /* ImageViewController.swift */; };
+		3C9381181C9D962E00F63BFD /* DemoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9381171C9D962E00F63BFD /* DemoURL.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C9380F81C9D8F3D00F63BFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C9380DB1C9D8F3D00F63BFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C9380E21C9D8F3D00F63BFD;
+			remoteInfo = Cassina;
+		};
+		3C9381031C9D8F3D00F63BFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C9380DB1C9D8F3D00F63BFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C9380E21C9D8F3D00F63BFD;
+			remoteInfo = Cassina;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C9380E31C9D8F3D00F63BFD /* Cassina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cassina.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C9380E61C9D8F3D00F63BFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3C9380E81C9D8F3D00F63BFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3C9380EB1C9D8F3D00F63BFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C9380ED1C9D8F3D00F63BFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C9380F01C9D8F3D00F63BFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3C9380F21C9D8F3D00F63BFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C9380F71C9D8F3D00F63BFD /* CassinaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CassinaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C9380FB1C9D8F3D00F63BFD /* CassinaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CassinaTests.swift; sourceTree = "<group>"; };
+		3C9380FD1C9D8F3D00F63BFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C9381021C9D8F3D00F63BFD /* CassinaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CassinaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C9381061C9D8F3D00F63BFD /* CassinaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CassinaUITests.swift; sourceTree = "<group>"; };
+		3C9381081C9D8F3D00F63BFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C9381151C9D8F8F00F63BFD /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		3C9381171C9D962E00F63BFD /* DemoURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoURL.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C9380E01C9D8F3D00F63BFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C9380F41C9D8F3D00F63BFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C9380FF1C9D8F3D00F63BFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C9380DA1C9D8F3D00F63BFD = {
+			isa = PBXGroup;
+			children = (
+				3C9380E51C9D8F3D00F63BFD /* Cassina */,
+				3C9380FA1C9D8F3D00F63BFD /* CassinaTests */,
+				3C9381051C9D8F3D00F63BFD /* CassinaUITests */,
+				3C9380E41C9D8F3D00F63BFD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C9380E41C9D8F3D00F63BFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C9380E31C9D8F3D00F63BFD /* Cassina.app */,
+				3C9380F71C9D8F3D00F63BFD /* CassinaTests.xctest */,
+				3C9381021C9D8F3D00F63BFD /* CassinaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C9380E51C9D8F3D00F63BFD /* Cassina */ = {
+			isa = PBXGroup;
+			children = (
+				3C9381141C9D8F5000F63BFD /* Sporting */,
+				3C9380E81C9D8F3D00F63BFD /* ViewController.swift */,
+				3C9381151C9D8F8F00F63BFD /* ImageViewController.swift */,
+				3C9381171C9D962E00F63BFD /* DemoURL.swift */,
+				3C9380EA1C9D8F3D00F63BFD /* Main.storyboard */,
+			);
+			path = Cassina;
+			sourceTree = "<group>";
+		};
+		3C9380FA1C9D8F3D00F63BFD /* CassinaTests */ = {
+			isa = PBXGroup;
+			children = (
+				3C9380FB1C9D8F3D00F63BFD /* CassinaTests.swift */,
+				3C9380FD1C9D8F3D00F63BFD /* Info.plist */,
+			);
+			path = CassinaTests;
+			sourceTree = "<group>";
+		};
+		3C9381051C9D8F3D00F63BFD /* CassinaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3C9381061C9D8F3D00F63BFD /* CassinaUITests.swift */,
+				3C9381081C9D8F3D00F63BFD /* Info.plist */,
+			);
+			path = CassinaUITests;
+			sourceTree = "<group>";
+		};
+		3C9381141C9D8F5000F63BFD /* Sporting */ = {
+			isa = PBXGroup;
+			children = (
+				3C9380E61C9D8F3D00F63BFD /* AppDelegate.swift */,
+				3C9380ED1C9D8F3D00F63BFD /* Assets.xcassets */,
+				3C9380EF1C9D8F3D00F63BFD /* LaunchScreen.storyboard */,
+				3C9380F21C9D8F3D00F63BFD /* Info.plist */,
+			);
+			name = Sporting;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C9380E21C9D8F3D00F63BFD /* Cassina */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C93810B1C9D8F3D00F63BFD /* Build configuration list for PBXNativeTarget "Cassina" */;
+			buildPhases = (
+				3C9380DF1C9D8F3D00F63BFD /* Sources */,
+				3C9380E01C9D8F3D00F63BFD /* Frameworks */,
+				3C9380E11C9D8F3D00F63BFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cassina;
+			productName = Cassina;
+			productReference = 3C9380E31C9D8F3D00F63BFD /* Cassina.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3C9380F61C9D8F3D00F63BFD /* CassinaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C93810E1C9D8F3D00F63BFD /* Build configuration list for PBXNativeTarget "CassinaTests" */;
+			buildPhases = (
+				3C9380F31C9D8F3D00F63BFD /* Sources */,
+				3C9380F41C9D8F3D00F63BFD /* Frameworks */,
+				3C9380F51C9D8F3D00F63BFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C9380F91C9D8F3D00F63BFD /* PBXTargetDependency */,
+			);
+			name = CassinaTests;
+			productName = CassinaTests;
+			productReference = 3C9380F71C9D8F3D00F63BFD /* CassinaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3C9381011C9D8F3D00F63BFD /* CassinaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C9381111C9D8F3D00F63BFD /* Build configuration list for PBXNativeTarget "CassinaUITests" */;
+			buildPhases = (
+				3C9380FE1C9D8F3D00F63BFD /* Sources */,
+				3C9380FF1C9D8F3D00F63BFD /* Frameworks */,
+				3C9381001C9D8F3D00F63BFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C9381041C9D8F3D00F63BFD /* PBXTargetDependency */,
+			);
+			name = CassinaUITests;
+			productName = CassinaUITests;
+			productReference = 3C9381021C9D8F3D00F63BFD /* CassinaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C9380DB1C9D8F3D00F63BFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Ayler;
+				TargetAttributes = {
+					3C9380E21C9D8F3D00F63BFD = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = QNJA87PUWE;
+					};
+					3C9380F61C9D8F3D00F63BFD = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = QNJA87PUWE;
+						TestTargetID = 3C9380E21C9D8F3D00F63BFD;
+					};
+					3C9381011C9D8F3D00F63BFD = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = QNJA87PUWE;
+						TestTargetID = 3C9380E21C9D8F3D00F63BFD;
+					};
+				};
+			};
+			buildConfigurationList = 3C9380DE1C9D8F3D00F63BFD /* Build configuration list for PBXProject "Cassina" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C9380DA1C9D8F3D00F63BFD;
+			productRefGroup = 3C9380E41C9D8F3D00F63BFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C9380E21C9D8F3D00F63BFD /* Cassina */,
+				3C9380F61C9D8F3D00F63BFD /* CassinaTests */,
+				3C9381011C9D8F3D00F63BFD /* CassinaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C9380E11C9D8F3D00F63BFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C9380F11C9D8F3D00F63BFD /* LaunchScreen.storyboard in Resources */,
+				3C9380EE1C9D8F3D00F63BFD /* Assets.xcassets in Resources */,
+				3C9380EC1C9D8F3D00F63BFD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C9380F51C9D8F3D00F63BFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C9381001C9D8F3D00F63BFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C9380DF1C9D8F3D00F63BFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C9381181C9D962E00F63BFD /* DemoURL.swift in Sources */,
+				3C9380E91C9D8F3D00F63BFD /* ViewController.swift in Sources */,
+				3C9381161C9D8F8F00F63BFD /* ImageViewController.swift in Sources */,
+				3C9380E71C9D8F3D00F63BFD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C9380F31C9D8F3D00F63BFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C9380FC1C9D8F3D00F63BFD /* CassinaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C9380FE1C9D8F3D00F63BFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C9381071C9D8F3D00F63BFD /* CassinaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C9380F91C9D8F3D00F63BFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C9380E21C9D8F3D00F63BFD /* Cassina */;
+			targetProxy = 3C9380F81C9D8F3D00F63BFD /* PBXContainerItemProxy */;
+		};
+		3C9381041C9D8F3D00F63BFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C9380E21C9D8F3D00F63BFD /* Cassina */;
+			targetProxy = 3C9381031C9D8F3D00F63BFD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3C9380EA1C9D8F3D00F63BFD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C9380EB1C9D8F3D00F63BFD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3C9380EF1C9D8F3D00F63BFD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C9380F01C9D8F3D00F63BFD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C9381091C9D8F3D00F63BFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C93810A1C9D8F3D00F63BFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C93810C1C9D8F3D00F63BFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Cassina/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.AylerLee.WTF.Cassina;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3C93810D1C9D8F3D00F63BFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Cassina/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.AylerLee.WTF.Cassina;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3C93810F1C9D8F3D00F63BFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CassinaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.AylerLee.WTF.CassinaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cassina.app/Cassina";
+			};
+			name = Debug;
+		};
+		3C9381101C9D8F3D00F63BFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CassinaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.AylerLee.WTF.CassinaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cassina.app/Cassina";
+			};
+			name = Release;
+		};
+		3C9381121C9D8F3D00F63BFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CassinaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.AylerLee.WTF.CassinaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Cassina;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		3C9381131C9D8F3D00F63BFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CassinaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.AylerLee.WTF.CassinaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Cassina;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C9380DE1C9D8F3D00F63BFD /* Build configuration list for PBXProject "Cassina" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C9381091C9D8F3D00F63BFD /* Debug */,
+				3C93810A1C9D8F3D00F63BFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C93810B1C9D8F3D00F63BFD /* Build configuration list for PBXNativeTarget "Cassina" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C93810C1C9D8F3D00F63BFD /* Debug */,
+				3C93810D1C9D8F3D00F63BFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3C93810E1C9D8F3D00F63BFD /* Build configuration list for PBXNativeTarget "CassinaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C93810F1C9D8F3D00F63BFD /* Debug */,
+				3C9381101C9D8F3D00F63BFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3C9381111C9D8F3D00F63BFD /* Build configuration list for PBXNativeTarget "CassinaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C9381121C9D8F3D00F63BFD /* Debug */,
+				3C9381131C9D8F3D00F63BFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C9380DB1C9D8F3D00F63BFD /* Project object */;
+}
