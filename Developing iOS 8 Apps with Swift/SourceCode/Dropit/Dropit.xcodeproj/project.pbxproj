@@ -507,6 +507,7 @@
 				3C93818B1C9ECAFE00F63BFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C93818C1C9ECAFE00F63BFD /* Build configuration list for PBXNativeTarget "DropitTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +516,7 @@
 				3C93818E1C9ECAFE00F63BFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C93818F1C9ECAFE00F63BFD /* Build configuration list for PBXNativeTarget "DropitUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +525,7 @@
 				3C9381911C9ECAFE00F63BFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

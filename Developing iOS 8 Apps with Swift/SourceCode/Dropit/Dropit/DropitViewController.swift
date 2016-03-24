@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import CoreMotion
 
-class DropitViewController: UIViewController, UIDynamicAnimatorDelegate {
+class DropitViewController: UIViewController, UIDynamicAnimatorDelegate
+{
     @IBOutlet weak var gameView: BezierPathView!
     
     lazy var animator: UIDynamicAnimator = {
@@ -47,13 +49,27 @@ class DropitViewController: UIViewController, UIDynamicAnimatorDelegate {
         let side = gameView.bounds.width / CGFloat(dropPerRow)
         return CGSize(width: side, height: side)
     }
-    
+    var motionManager = CMMotionManager()
     // MARK: - 视图生命周期
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
+        if motionManager.accelerometerAvailable {
+            motionManager.startAccelerometerUpdatesToQueue(NSOperationQueue.mainQueue(), withHandler: { (data, error) in
+                if data != nil {
+                    self.dropBehavior.gravity.gravityDirection = CGVector(dx: data!.acceleration.x, dy: -data!.acceleration.y)
+                }
+            })
+        }
+        
         animator.addBehavior(dropBehavior)
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        
     }
     
     override func viewDidLayoutSubviews() {
@@ -62,9 +78,9 @@ class DropitViewController: UIViewController, UIDynamicAnimatorDelegate {
 //        let barrierOrigin = CGPoint(x: gameView.bounds.midX-barrierSize.width/2, y: gameView.bounds.midY-barrierSize.height/2)
         
 //        let path = UIBezierPath(ovalInRect: CGRect(origin: barrierOrigin, size: barrierSize))
-        let path = UIBezierPath()
+//        let path = UIBezierPath()
 //        dropBehavior.addBarrier(path, name: PathName.MiddleBarrier)
-        gameView.setPath(PathName.MiddleBarrier, path: path)
+//        gameView.setPath(PathName.MiddleBarrier, path: path)
     }
     
     struct PathName {
@@ -102,13 +118,16 @@ class DropitViewController: UIViewController, UIDynamicAnimatorDelegate {
     func dynamicAnimatorDidPause(animator: UIDynamicAnimator) {
         removeCompletedRow()
     }
+    
     var lastDropView: UIView?
+    
     // MARK: - 私有方法
     private func drop()
     {
         var frame = CGRect(origin: CGPointZero, size: dropSize)
         frame.origin.x = CGFloat(random() % dropPerRow) * dropSize.width
-        
+        print(frame)
+        print(gameView.frame)
         let dropView = UIView(frame: frame)
         dropView.backgroundColor = UIColor.randomColor()
         dropBehavior.addDrop(dropView)
