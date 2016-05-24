@@ -1,49 +1,37 @@
-## CocoaPods 的安装
+> ####最简单教程
+> 更新时间 : 2016.05.24
 
-### 替换源
-> 移除 ruby 源
+**以下均为终端命令**
 
-	gem sources --remove https://rubygems.org/
-	
-> 添加国内淘宝源  
+## 1. 替换源
 
-	gem sources -a https://ruby.taobao.org/
-	
-> 查看源
+```
+gem sources --remove https://rubygems.org/ //移除 国外ruby源
+gem sources -a https://ruby.taobao.org/   //添加淘宝镜像
+gem sources -l    //查看列表
+```
 
-	gem sources -l
- <br />
-
-### 更新 gem（输入密码）
+## 2. 更新 gem （输入密码）
 	sudo gem update --system  
- <br />
- 
-### 安装 CocoaPods 
-> OS X EI Capitan 前
 
-	sudo gem install cocoapods  
+## 3. 安装 CocoaPods 
 
-> OS X EI Capitan 后
+> Mac OS 系统更新到 10.11之后,网上旧教程失效, 用下面第二条命令
 
-	sudo gem install -n /usr/local/bin cocoapods
-​	
+* OS X EI Capitan 前 (10.10)
+```
+sudo gem install cocoapods
+```
+* OS X EI Capitan 后 (10.11)
+```
+sudo gem install -n /usr/local/bin cocoapods
+```	
 
-### 执行 Setup
-	pod setup
-
+## 4. 执行 Setup
 * 时间略长
-<br />
-
-<br />
-
+      pod setup
 
 ---
 
 ### 相关文章:  
 [CocoaPods 使用](CocoaPods 使用.md)
-
-### 参考:
-
-唐巧原文:
-[http://blog.devtang.com/2014/05/25/use-cocoapod-to-manage-ios-lib-dependency/](http://blog.devtang.com/2014/05/25/use-cocoapod-to-manage-ios-lib-dependency/)
-  
