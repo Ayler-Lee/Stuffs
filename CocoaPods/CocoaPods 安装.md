@@ -19,10 +19,13 @@ gem sources -l    //查看列表
 > Mac OS 系统更新到 10.11之后,网上旧教程失效, 用下面第二条命令
 
 * OS X EI Capitan 前 (10.10)
+
 ```
 sudo gem install cocoapods
 ```
+
 * OS X EI Capitan 后 (10.11)
+
 ```
 sudo gem install -n /usr/local/bin cocoapods
 ```	
