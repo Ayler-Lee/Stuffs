@@ -16,27 +16,6 @@ NSCharacterSet *set = [NSCharacterSet characterSetWithCharactersInString:
 NSString *newString = [trimString stringByTrimmingCharactersInSet:set];
 ``` 
 
-* 去掉分割线多余15像素  
-
-```
-// 首先在viewDidLoad方法加入以下代码：
- if ([self.tableView respondsToSelector:@selector(setSeparatorInset:)]) {
-        [self.tableView setSeparatorInset:UIEdgeInsetsZero];    
-}   
- if ([self.tableView respondsToSelector:@selector(setLayoutMargins:)]) {        
-        [self.tableView setLayoutMargins:UIEdgeInsetsZero];
-}
-// 然后在重写willDisplayCell方法
-- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell 
-forRowAtIndexPath:(NSIndexPath *)indexPath{   
-    if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {       
-             [cell setSeparatorInset:UIEdgeInsetsZero];    
-    }    
-    if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {        
-             [cell setLayoutMargins:UIEdgeInsetsZero];    
-    }
-}
-```
 
 * 计算方法耗时时间间隔
 
@@ -214,20 +193,6 @@ navigationController.hidesBarsOnSwipe = Yes
 }</uitableviewrowaction *>
 ```
 
-* 去掉UItableview headerview黏性(sticky)
-
-```
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    if (scrollView == self.tableView) {
-        CGFloat sectionHeaderHeight = 10; //sectionHeaderHeight
-        if (scrollView.contentOffset.y <= sectionHeaderHeight && scrollView.contentOffset.y >= 0) {
-            scrollView.contentInset = UIEdgeInsetsMake(-scrollView.contentOffset.y, 0, 0, 0);
-        } else if (scrollView.contentOffset.y >= sectionHeaderHeight) {
-            scrollView.contentInset = UIEdgeInsetsMake(-sectionHeaderHeight, 0, 0, 0);
-        }
-    }
-}
-```
 
 
 
