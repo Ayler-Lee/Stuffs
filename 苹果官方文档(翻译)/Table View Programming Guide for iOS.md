@@ -83,9 +83,22 @@ A table view has only one column and allows vertical scrolling only. It consists
 >**相关章节:** [Navigating a Data Hierarchy with Table Views](), [Managing Selections]()
 
 -
-> #### In Editing Mode You Can Add, Delete, and Reorder Rows
+> #### In Editing Mode You Can Add, Delete, and Reorder Rows  
+> * 编辑模式下, 你可以添加,删除,重新排序行
 
-ss
+.
+
+>Table views can enter an editing mode in which users can insert or delete rows, or relocate them within the table. In editing mode, rows that are marked for insertion or deletion display a green plus sign (insertion) or a red minus sign (deletion) near the left edge of the row. If users touch a deletion control or, in some table views, swipe across a row, a red Delete button appears, prompting users to delete that row. Rows that can be relocated display (near their right edge) an image consisting of several horizontal lines. When the table view leaves editing mode, the insertion, deletion, and reordering controls disappear.
+
+* tabaleView 能进入编辑模式, 让用户可以插入, 删除行, 或者在表中调整它的位置. 在编辑模式下, 被标记为插入单元格显示绿色加号, 被标记为删除的单元格显示红色减号,在单元格的左边. 如果用户点击了删除标记或者左划某些表中的单元格, 会出现一个红色的删除按钮, 驱使用户删除这一行. 能被重新排列的单元格在右边显示一个由几条水平线组成的图片. 当 tableView 退出编辑模式, 插入标记, 删除标记, 重新排序标记都会消失.
+ 
+>When users attempt to insert, delete, or reorder rows, the table view sends a sequence of messages to its data source and delegate so that they can manage these operations.
+
+* 当用户试图插入, 删除, 或重新排序单元格时, tableView 发送一系列的消息给数据源和代理, 因此它可以管理这些操作.
+
+> **Related Chapters:** [Inserting and Deleting Rows and Sections](), [Managing the Reordering of Rows]()
+
+-
 > #### To Create a Table View, Use a Storyboard
 
 ss
