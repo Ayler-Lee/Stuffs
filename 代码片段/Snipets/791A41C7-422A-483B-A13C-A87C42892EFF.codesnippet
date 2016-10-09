@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>markAll</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - Life Cycle
+
+
+
+#pragma mark - Delegate
+
+
+
+#pragma mark - CustomDelegate
+
+
+
+#pragma mark - Event
+
+
+
+#pragma mark - Network
+
+
+
+#pragma mark - Private
+
+
+
+#pragma mark - Getter/Setter
+
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>791A41C7-422A-483B-A13C-A87C42892EFF</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Mark All</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
